@@ -1,0 +1,45 @@
+import 'package:e_commerce_application/utils/theme/custom_themes/text_button_theme.dart';
+import 'package:e_commerce_application/utils/theme/custom_themes/text_form_field_theme.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'custom_themes/bottom_sheet_theme.dart';
+import 'custom_themes/checkbox_theme.dart';
+import 'custom_themes/chip_theme.dart';
+import 'custom_themes/elevatedButtonTheme.dart';
+import 'custom_themes/outlined_button_theme.dart';
+import 'custom_themes/text_theme.dart';
+
+class TappTheme {
+  TappTheme._(); // To avoid creating instances
+  static ThemeData lightTheme = ThemeData(
+    useMaterial3: true,
+    fontFamily: GoogleFonts.rajdhani().fontFamily,
+    brightness: Brightness.light,
+    primaryColor: Colors.blue,
+    secondaryHeaderColor: Colors.white,
+    textTheme: TTextTheme.textTheme,
+    textButtonTheme: TTextButtonTheme.light,
+    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
+    inputDecorationTheme: TTextFormFieldTheme.lightTextFormFieldTheme,
+    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
+    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
+    chipTheme: TChipTheme.lightChipTheme,
+  );
+  static ThemeData darkTheme = ThemeData(
+    useMaterial3: true,
+    fontFamily: GoogleFonts.rajdhani().fontFamily,
+    brightness: Brightness.dark,
+    primaryColor: Colors.blue,
+    secondaryHeaderColor: Colors.black,
+    textTheme: TTextTheme.textTheme,
+    textButtonTheme: TTextButtonTheme.dark,
+    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
+    inputDecorationTheme: TTextFormFieldTheme.darkTextFormFieldTheme,
+    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
+    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
+    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
+    chipTheme: TChipTheme.darkChipTheme,
+  );
+}
