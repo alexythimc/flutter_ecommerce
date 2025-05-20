@@ -22,4 +22,28 @@ class TTextStrings {
 
   // -- Home Screen
   static const String welcomeMessage = 'Welcome to E-Commerce App!';
+  static const String welcome = 'Welcome Back';
+
+  //email verification screen
+  static const String emailVerificationTitle = 'Verify Your Email Address';
+  static const String emailVerificationSubtitle =
+      'Congratulations! Your new accoint awaits; please verify your email address to get started and enjoy our shopping experience.`';
+
+  static String loginText =
+      "Discover Unlimited Choices And Unmatched Convenience";
+
+  static String copyRightText = "${DateTime.timestamp().year} © AthleteArc.";
+
+  static String resendEmail = "Resend Email";
+
+  static String emailVerificationSuccess = "Your account successfully created!";
+
+  static String emailVerificationSuccessSubtitle =
+      "Yayyy!,Your email has been verified successfully ,You're all set to go ! Explore and enjoy the seamless shopping experience with us.";
+
+  static String forgotPasswordemailVerificationTitle =
+      "Reset Password Email Sent!";
+
+  static String forgotPasswordemailVerificationSubTitle =
+      "We value your privacy and security so have sent a password reset email to your registered email address. Please check your inbox and follow the instructions to reset your password.";
 }

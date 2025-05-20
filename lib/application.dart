@@ -2,7 +2,7 @@ import 'package:e_commerce_application/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
-import 'features/authentication/screens/on_boarding/onBoarding.dart';
+import 'features/authentication/screens/on_boarding/widgets/onBoarding.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -16,8 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'E-Commerce App',
       theme: TappTheme.lightTheme,
       darkTheme: TappTheme.darkTheme,
-      home:
-          OnboardingScreen(), // Replace with your actual onboarding screen widget
+      home: OnboardingScreen(),
     );
   }
 }

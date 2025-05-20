@@ -3,6 +3,9 @@ import 'package:e_commerce_application/utils/constants/image_strings.dart';
 import 'package:e_commerce_application/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_instance/src/extension_instance.dart';
+
+import '../../../controllers/on_boarding_controller.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -14,6 +17,8 @@ class OnboardingScreen extends StatelessWidget {
       body: Stack(
         children: [
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.onPageChanged,
             children: [
               OnBoardingPage(
                 imagePath: TImageStrings.onboarding1,

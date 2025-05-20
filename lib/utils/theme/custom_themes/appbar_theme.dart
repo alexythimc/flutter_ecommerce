@@ -5,7 +5,7 @@ class TAppBarTheme {
 
   // -- Light Theme
   static final lightAppBarTheme = AppBarTheme(
-    backgroundColor: Colors.transparent,
+    backgroundColor: Colors.white,
     surfaceTintColor: Colors.transparent,
     elevation: 0,
     scrolledUnderElevation: 0,
@@ -27,7 +27,7 @@ class TAppBarTheme {
 
   // -- Dark Theme
   static final darkAppBarTheme = AppBarTheme(
-    backgroundColor: Colors.transparent,
+    backgroundColor: Colors.black,
     surfaceTintColor: Colors.transparent,
     elevation: 0,
     scrolledUnderElevation: 0,

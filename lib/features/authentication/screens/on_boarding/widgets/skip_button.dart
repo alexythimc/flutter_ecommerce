@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../../controllers/on_boarding_controller.dart';
+
 class ArrowButtonWidget extends StatelessWidget {
   const ArrowButtonWidget({
     super.key,
@@ -14,10 +16,9 @@ class ArrowButtonWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(right: 8.0),
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () => OnBoardingController.instance.goToNextPage(),
             child: Icon(
               Iconsax.arrow_circle_right,
-              color: Colors.white,
             ),
           ),
         )
@@ -37,7 +38,7 @@ class SkipButton extends StatelessWidget {
       children: [
         Spacer(),
         TextButton(
-          onPressed: () {},
+          onPressed: () => OnBoardingController.instance.skipOnboarding(),
           child: Text("Skip"),
         ),
       ],

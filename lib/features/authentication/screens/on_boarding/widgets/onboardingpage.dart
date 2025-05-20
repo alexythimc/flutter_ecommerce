@@ -1,11 +1,10 @@
 import 'package:e_commerce_application/features/authentication/screens/on_boarding/widgets/skip_button.dart';
 import 'package:flutter/material.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/device/deviceutils.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
 import '../../../../../utils/theme/custom_themes/text_theme.dart';
+import 'onboarding_navigation.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({
@@ -45,24 +44,7 @@ class OnBoardingPage extends StatelessWidget {
         SizedBox(
           height: 120,
         ),
-        Row(
-          children: [
-            SmoothPageIndicator(
-              effect: WormEffect(
-                dotHeight: 5,
-                dotWidth: 30,
-                activeDotColor: TDeviceUtils.isDarkMode(context)
-                    ? Colors.white
-                    : Colors.black,
-                dotColor: TDeviceUtils.isDarkMode(context)
-                    ? Colors.white.withOpacity(0.5)
-                    : Colors.black.withOpacity(0.5),
-              ),
-              controller: PageController(),
-              count: 3,
-            ),
-          ],
-        ),
+        OnBoardingPageNavigation(),
         SizedBox(
           height: 30,
         ),

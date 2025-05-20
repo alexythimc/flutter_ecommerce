@@ -29,6 +29,7 @@ class TSizes {
 
   // -- AppBar measurement
   static const double appBarHeight = 56.0;
+  static const double logoHeight = 100.0;
 
   // -- Border radius sizes
   static const double xsBorderRadius = 4.0;
@@ -37,7 +38,7 @@ class TSizes {
   static const double lgBorderRadius = 12.0;
 
   // default space between sections
-  static const double defaultSectionSpace = 32.0;
+  static const double defaultSectionSpace = 16.0;
   // default space between items
   static const double defaultItemSpace = 8.0;
   // default space between Section
@@ -71,6 +72,11 @@ class TSizes {
   static const double productItemBorderRadius = 12.0;
   static const double productItemPadding = 8.0;
 
+  // animation and images height
+  static const double animationHeight = 400.0;
+  static const double animationWidth = 400.0;
+  static const double imageHeight = 400.0;
+  static const double imageWidth = 400.0;
   // grid view dimensions
   static const double gridViewCrossAxisCount = 2;
   static const double gridViewChildAspectRatio = 1.5;

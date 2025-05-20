@@ -1,3 +1,4 @@
+import 'package:e_commerce_application/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:e_commerce_application/utils/theme/custom_themes/text_button_theme.dart';
 import 'package:e_commerce_application/utils/theme/custom_themes/text_form_field_theme.dart';
 import 'package:flutter/material.dart';
@@ -16,9 +17,11 @@ class TappTheme {
     useMaterial3: true,
     fontFamily: GoogleFonts.rajdhani().fontFamily,
     brightness: Brightness.light,
-    primaryColor: Colors.blue,
+    scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255),
+    primaryColor: Colors.white,
     secondaryHeaderColor: Colors.white,
     textTheme: TTextTheme.textTheme,
+    appBarTheme: TAppBarTheme.lightAppBarTheme,
     textButtonTheme: TTextButtonTheme.light,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightTextFormFieldTheme,
@@ -31,9 +34,11 @@ class TappTheme {
     useMaterial3: true,
     fontFamily: GoogleFonts.rajdhani().fontFamily,
     brightness: Brightness.dark,
-    primaryColor: Colors.blue,
+    primaryColor: Colors.white,
     secondaryHeaderColor: Colors.black,
+    appBarTheme: TAppBarTheme.darkAppBarTheme,
     textTheme: TTextTheme.textTheme,
+    scaffoldBackgroundColor: Color.fromARGB(255, 0, 0, 0),
     textButtonTheme: TTextButtonTheme.dark,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.darkTextFormFieldTheme,
