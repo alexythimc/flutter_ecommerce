@@ -13,12 +13,15 @@ dependencies:
 
   iconsax:
   get:
+  dots_indicator:
+  carousel_slider:
   dio:
   logger:
   google_fonts:
   smooth_page_indicator:
   url_launcher:
   intl:
+
   get_storage:
   cupertino_icons: ^1.0.8
   connectivity_plus: ^6.0.3
@@ -38,6 +41,10 @@ flutter:
      - assets/images/splash/
      - assets/images/on_boarding/
      - assets/images/signup/
+     - assets/images/homeScreen/
+     - assets/images/homeScreen/FeaturedProducts/
+     - assets/images/homeScreen/Clip/
+     - assets/images/homeScreen/Categories/
      - assets/icons/
      - assets/logos/
      - assets/animations/

@@ -8,6 +8,7 @@ class TElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
+      iconColor: Colors.white,
       backgroundColor: Colors.black,
       disabledForegroundColor: Colors.grey,
       disabledBackgroundColor: Colors.grey,

@@ -19,4 +19,35 @@ class TImageStrings {
       "assets/images/signup/everification.gif";
   static const String emailverificationsucces =
       "assets/images/signup/success.gif";
+
+  static var home_light = "assets/images/homeScreen/Clip/home_light.jpeg";
+  static var home_dark = "assets/images/homeScreen/Clip/home_dark.jpeg";
+
+  // category images as an array
+  static const List<String> categoryImages = [
+    'assets/images/homeScreen/Categories/sports.gif',
+    'assets/images/homeScreen/Categories/cloth.gif',
+    'assets/images/homeScreen/Categories/toy.gif',
+    'assets/images/homeScreen/Categories/electronics.gif',
+    'assets/images/homeScreen/Categories/jewllary.gif',
+    'assets/images/homeScreen/Categories/shoe.gif',
+    'assets/images/homeScreen/Categories/cosmetics.gif',
+  ];
+
+  // -- category titles
+  static const List<String> categoryTitles = [
+    'Sports',
+    'Cloth',
+    'Toy',
+    'Electronics',
+    'Jewelry',
+    'Shoe',
+    'Cosmetics',
+  ];
+
+  static const List<String> featuredProducts = [
+    'assets/images/homeScreen/FeaturedProducts/NikeAirJordan1.jpeg',
+    'assets/images/homeScreen/FeaturedProducts/NikeAirJordan2.jpeg',
+    'assets/images/homeScreen/FeaturedProducts/NikeAirJordan3.jpeg'
+  ];
 }

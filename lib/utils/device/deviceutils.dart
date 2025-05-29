@@ -126,4 +126,8 @@ class TDeviceUtils {
       'buildNumber': info.buildNumber,
     };
   }
+
+  static Size getAppBarSize() {
+    return const Size.fromHeight(kToolbarHeight);
+  }
 }

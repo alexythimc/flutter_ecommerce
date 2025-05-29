@@ -5,29 +5,29 @@ class TAppBarTheme {
 
   // -- Light Theme
   static final lightAppBarTheme = AppBarTheme(
-    backgroundColor: Colors.white,
-    surfaceTintColor: Colors.transparent,
+    backgroundColor: Colors.transparent,
+    //surfaceTintColor: Colors.transparent,
     elevation: 0,
     scrolledUnderElevation: 0,
     centerTitle: false,
     titleTextStyle: const TextStyle(
       fontSize: 10,
       fontWeight: FontWeight.w600,
-      color: Colors.black,
+      color: Colors.white,
     ),
     iconTheme: const IconThemeData(
       size: 24,
-      color: Colors.black,
+      color: Colors.white,
     ),
     actionsIconTheme: const IconThemeData(
       size: 24,
-      color: Colors.black,
+      color: Colors.white,
     ),
   );
 
   // -- Dark Theme
   static final darkAppBarTheme = AppBarTheme(
-    backgroundColor: Colors.black,
+    backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
     elevation: 0,
     scrolledUnderElevation: 0,

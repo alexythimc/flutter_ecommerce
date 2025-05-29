@@ -86,4 +86,6 @@ class TSizes {
 
   // loading indicator size
   static const double loadingIndicatorSize = 36.0;
+
+  static var bottomNavigationBarHeight = 70.0;
 }

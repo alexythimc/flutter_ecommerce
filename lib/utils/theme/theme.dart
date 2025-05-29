@@ -1,9 +1,10 @@
-import 'package:e_commerce_application/utils/theme/custom_themes/appbar_theme.dart';
+import 'package:e_commerce_application/utils/theme/custom_themes/bottom_navigationbar_theme.dart';
 import 'package:e_commerce_application/utils/theme/custom_themes/text_button_theme.dart';
 import 'package:e_commerce_application/utils/theme/custom_themes/text_form_field_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'custom_themes/appbar_theme.dart';
 import 'custom_themes/bottom_sheet_theme.dart';
 import 'custom_themes/checkbox_theme.dart';
 import 'custom_themes/chip_theme.dart';
@@ -15,13 +16,14 @@ class TappTheme {
   TappTheme._(); // To avoid creating instances
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: GoogleFonts.rajdhani().fontFamily,
+    fontFamily: GoogleFonts.poppins().fontFamily,
     brightness: Brightness.light,
     scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255),
     primaryColor: Colors.white,
     secondaryHeaderColor: Colors.white,
     textTheme: TTextTheme.textTheme,
     appBarTheme: TAppBarTheme.lightAppBarTheme,
+    bottomNavigationBarTheme: TBottomNavigationBarTheme.lightTheme,
     textButtonTheme: TTextButtonTheme.light,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightTextFormFieldTheme,
@@ -37,7 +39,8 @@ class TappTheme {
     primaryColor: Colors.white,
     secondaryHeaderColor: Colors.black,
     appBarTheme: TAppBarTheme.darkAppBarTheme,
-    textTheme: TTextTheme.textTheme,
+    bottomNavigationBarTheme: TBottomNavigationBarTheme.darkTheme,
+    textTheme: TTextTheme.darkTextTheme,
     scaffoldBackgroundColor: Color.fromARGB(255, 0, 0, 0),
     textButtonTheme: TTextButtonTheme.dark,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,

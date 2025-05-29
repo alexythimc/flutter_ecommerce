@@ -9,6 +9,5 @@ void main() {
   //  Authentication initialization
   //  Widget binding initialization
   //  Await Native splash screen
-
   runApp(const MyApp());
 }
