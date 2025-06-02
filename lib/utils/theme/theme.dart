@@ -1,5 +1,4 @@
 import 'package:e_commerce_application/utils/theme/custom_themes/bottom_navigationbar_theme.dart';
-import 'package:e_commerce_application/utils/theme/custom_themes/text_button_theme.dart';
 import 'package:e_commerce_application/utils/theme/custom_themes/text_form_field_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -24,7 +23,7 @@ class TappTheme {
     textTheme: TTextTheme.textTheme,
     appBarTheme: TAppBarTheme.lightAppBarTheme,
     bottomNavigationBarTheme: TBottomNavigationBarTheme.lightTheme,
-    textButtonTheme: TTextButtonTheme.light,
+    // textButtonTheme: TTextButtonTheme.light,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightTextFormFieldTheme,
     bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
@@ -34,7 +33,7 @@ class TappTheme {
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
-    fontFamily: GoogleFonts.rajdhani().fontFamily,
+    fontFamily: GoogleFonts.poppins().fontFamily,
     brightness: Brightness.dark,
     primaryColor: Colors.white,
     secondaryHeaderColor: Colors.black,
@@ -42,7 +41,7 @@ class TappTheme {
     bottomNavigationBarTheme: TBottomNavigationBarTheme.darkTheme,
     textTheme: TTextTheme.darkTextTheme,
     scaffoldBackgroundColor: Color.fromARGB(255, 0, 0, 0),
-    textButtonTheme: TTextButtonTheme.dark,
+    // textButtonTheme: TTextButtonTheme.dark,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.darkTextFormFieldTheme,
     bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,

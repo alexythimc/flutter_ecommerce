@@ -1,3 +1,4 @@
+import 'package:e_commerce_application/botttom_navigation.dart';
 import 'package:e_commerce_application/features/authentication/screens/logIn/forgot_password.dart';
 import 'package:e_commerce_application/features/authentication/screens/logIn/forgot_password_email_verifivation.dart';
 import 'package:flutter/material.dart';
@@ -38,6 +39,13 @@ class LoginController extends GetxController {
     Get.to(
       () =>
           const ForgotPasswordEmailVerification(), // Replace with your actual sign-up screen widget
+      transition: Transition.downToUp,
+    );
+  }
+
+  void login() {
+    Get.to(
+      () => const BottomNavigation(),
       transition: Transition.downToUp,
     );
   }

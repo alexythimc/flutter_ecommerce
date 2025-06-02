@@ -10,6 +10,8 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? leadingOnPressed;
   final bool showBackButton;
 
+  final dynamic iconColor;
+
   const TAppBar({
     super.key,
     this.title,
@@ -17,6 +19,7 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.actions,
     this.leadingOnPressed,
     this.showBackButton = false,
+    this.iconColor,
   });
   @override
   // TODO: implement preferredSize
@@ -38,6 +41,9 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
                 ? IconButton(
                     icon: Icon(leadingIcon),
                     onPressed: leadingOnPressed,
+                    // // If iconColor is null, it will use the default icon color according to the theme
+                    // If iconColor is null, it will use the default icon color according to the theme
+                    color: iconColor ?? Theme.of(context).iconTheme.color,
                   )
                 : null,
         title: title,

@@ -33,7 +33,7 @@ class OnBoardingPage extends StatelessWidget {
         ),
         Text(
           title,
-          style: TTextTheme.textTheme.headlineLarge,
+          style: TTextTheme.textTheme.headlineMedium,
         ),
         SizedBox(height: TSizes.defaultItemSpace),
         Text(

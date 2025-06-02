@@ -50,4 +50,32 @@ class TImageStrings {
     'assets/images/homeScreen/FeaturedProducts/NikeAirJordan2.jpeg',
     'assets/images/homeScreen/FeaturedProducts/NikeAirJordan3.jpeg'
   ];
+
+  // brand logos as an array
+  static const List<String> brandLogos = [
+    'assets/logos/brands/acer_logo.png',
+    'assets/logos/brands/apple-logo.png',
+    'assets/logos/brands/adidas-logo.png',
+    'assets/logos/brands/herman-miller-logo.png',
+    'assets/logos/brands/ikea_logo.png',
+    'assets/logos/brands/jordan-logo.png',
+    'assets/logos/brands/kenwood-logo.png',
+    'assets/logos/brands/nike.png',
+    'assets/logos/brands/puma-logo.png',
+    'assets/logos/brands/zara-logo.png',
+  ];
+
+  // // brand names as an array
+  static const List<String> brandNames = [
+    'Acer',
+    'Apple',
+    'Adidas',
+    'Herman Miller',
+    'Ikea',
+    'Jordan',
+    'Kenwood',
+    'Nike',
+    'Puma',
+    'Zara',
+  ];
 }

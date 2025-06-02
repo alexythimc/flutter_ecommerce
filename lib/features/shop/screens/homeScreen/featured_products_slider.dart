@@ -44,6 +44,7 @@ class FeaturedProducts extends StatelessWidget {
                 )
             ],
             options: CarouselOptions(
+              autoPlay: true,
               viewportFraction: 1,
               onPageChanged: (index, reason) {
                 controller.changeIndex(index.toDouble());

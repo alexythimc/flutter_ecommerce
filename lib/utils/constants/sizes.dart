@@ -43,6 +43,8 @@ class TSizes {
   static const double defaultItemSpace = 8.0;
   // default space between Section
   static const double defaultSpace = 40.0;
+  // default space between text and icon
+  static const double defaultSpaceOG = 24.0;
 
   // divider height
   static const double dividerHeight = 1.0;

@@ -30,7 +30,7 @@ class TCustomAppBar extends StatelessWidget {
         ],
       ),
       actions: [
-        CartIcon(),
+        CartIcon(iconColor: Colors.white),
       ],
     );
   }

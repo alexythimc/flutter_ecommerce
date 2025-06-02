@@ -6,7 +6,9 @@ import '../../utils/constants/sizes.dart';
 class CartIcon extends StatelessWidget {
   const CartIcon({
     super.key,
+    this.iconColor,
   });
+  final Color? iconColor;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,7 @@ class CartIcon extends StatelessWidget {
         icon: Icon(
           Iconsax.shopping_bag,
           size: TSizes.mdIcon,
-          color: Colors.white,
+          color: iconColor ?? Theme.of(context).iconTheme.color,
         ),
         onPressed: () {},
       ),
