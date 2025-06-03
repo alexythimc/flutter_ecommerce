@@ -3,6 +3,7 @@ import 'package:e_commerce_application/common/widgets/carticon.dart';
 import 'package:e_commerce_application/common/widgets/title_bar.dart';
 import 'package:e_commerce_application/utils/constants/image_strings.dart';
 import 'package:e_commerce_application/utils/constants/sizes.dart';
+import 'package:e_commerce_application/utils/device/deviceutils.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -27,7 +28,7 @@ class ShopScreen extends StatelessWidget {
             return [
               SliverAppBar(
                 automaticallyImplyLeading: false,
-                pinned: true,
+                // pinned: true,
                 floating: true,
                 expandedHeight: 440,
                 flexibleSpace: Padding(
@@ -45,7 +46,9 @@ class ShopScreen extends StatelessWidget {
                         padding: EdgeInsets.zero,
                         backgroundColor: Colors.transparent,
                         textColor: Colors.white,
-                        hintTextColor: Colors.white,
+                        hintTextColor: TDeviceUtils.isDarkMode(context)
+                            ? Colors.white
+                            : Colors.black54,
                       ),
                       SizedBox(
                         height: TSizes.defaultItemSpace,
