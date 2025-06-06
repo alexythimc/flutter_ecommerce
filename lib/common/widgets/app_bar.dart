@@ -43,7 +43,9 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
                     onPressed: leadingOnPressed,
                     // // If iconColor is null, it will use the default icon color according to the theme
                     // If iconColor is null, it will use the default icon color according to the theme
-                    color: iconColor ?? Theme.of(context).iconTheme.color,
+                    color: iconColor != null
+                        ? Color(iconColor)
+                        : Theme.of(context).iconTheme.color,
                   )
                 : null,
         title: title,

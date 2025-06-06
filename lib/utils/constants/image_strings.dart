@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
+
 class TImageStrings {
   TImageStrings._(); // To avoid creating instances
 
@@ -77,5 +80,17 @@ class TImageStrings {
     'Nike',
     'Puma',
     'Zara',
+  ];
+  // -- shop categories icons with icnosax
+
+  static var shopCategoriesIcon = [
+    Iconsax.medal_star, // Sports
+    Icons.checkroom, // Cloth
+    Iconsax.game, // Toy
+    Iconsax.monitor, // Electronics
+    Iconsax.diamonds, // Jewelry
+    // Shoe
+    Icons.snowshoeing,
+    Iconsax.document_sketch, // Cosmetics
   ];
 }

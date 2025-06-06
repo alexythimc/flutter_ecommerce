@@ -12,21 +12,6 @@ class HomeScreenController extends GetxController {
     _currentIndex.value = index;
   }
 
-  @override
-  void onInit() {
-    super.onInit();
-    // Additional initialization if needed
-  }
 
-  @override
-  void onReady() {
-    super.onReady();
-    // Additional setup after the controller is ready
-  }
 
-  @override
-  void onClose() {
-    super.onClose();
-    // Cleanup resources if needed
-  }
 }

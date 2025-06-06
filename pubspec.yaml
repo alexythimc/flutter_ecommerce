@@ -45,6 +45,7 @@ flutter:
      - assets/images/homeScreen/FeaturedProducts/
      - assets/images/homeScreen/Clip/
      - assets/images/homeScreen/Categories/
+     - assets/images/profile/
      - assets/logos/brands/
      - assets/logos/payment_methods/
      - assets/icons/

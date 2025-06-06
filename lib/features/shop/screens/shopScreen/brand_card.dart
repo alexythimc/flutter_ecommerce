@@ -1,3 +1,4 @@
+import 'package:e_commerce_application/utils/device/deviceutils.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -15,7 +16,10 @@ class BrandCard extends StatelessWidget {
           return Container(
             decoration: BoxDecoration(
               color: Colors.transparent,
-              border: Border.all(color: Colors.black),
+              border: Border.all(
+                  color: TDeviceUtils.isDarkMode(context)
+                      ? Colors.white
+                      : Colors.black),
               borderRadius: BorderRadius.circular(16),
             ),
             child: Padding(
@@ -33,6 +37,7 @@ class BrandCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
                             TImageStrings.brandNames[index],

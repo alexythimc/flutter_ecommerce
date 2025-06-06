@@ -1,3 +1,6 @@
+import 'package:flutter/cupertino.dart';
+import 'package:iconsax/iconsax.dart';
+
 class TTextStrings {
   TTextStrings._(); // To avoid creating instances
 
@@ -46,4 +49,50 @@ class TTextStrings {
 
   static String forgotPasswordemailVerificationSubTitle =
       "We value your privacy and security so have sent a password reset email to your registered email address. Please check your inbox and follow the instructions to reset your password.";
+
+  static List<String> settingsOptions = [
+    'My Addresses',
+    'My Cart',
+    'My Orders',
+    'Bank Details',
+    'My Coupons',
+    'Notifications',
+    'Privacy Policy',
+    'Logout'
+  ];
+  static const List<IconData> settingsIcons = [
+    // iconsax icons
+    Iconsax.safe_home,
+    Iconsax.shopping_cart,
+    Iconsax.bag,
+    Iconsax.bank,
+    Iconsax.wallet4,
+    Iconsax.notification,
+    Iconsax.shield,
+    Iconsax.logout
+  ];
+
+  static var settingsSubtitles = [
+    'Manage your addresses',
+    'View and manage your cart',
+    'Track your orders',
+    'Manage your bank details',
+    'View and manage your coupons',
+    'View notifications',
+    'Read our privacy policy',
+    'Logout from your account'
+  ];
+
+  static var appSettingsOptions = [
+    'Dark Mode',
+    'Notifications',
+    'Safe Mode',
+    'Location',
+  ];
+  static const List<IconData> appSettingsIcons = [
+    Iconsax.moon,
+    Iconsax.notification,
+    Iconsax.shield,
+    Iconsax.location
+  ];
 }

@@ -7,9 +7,11 @@ class ImageClip extends StatelessWidget {
   const ImageClip({
     super.key,
     required this.imagePath,
+    this.height,
   });
 
   final String imagePath;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class ImageClip extends StatelessWidget {
       child: Image.asset(
         imagePath,
         width: double.infinity,
-        height: TDeviceUtils.screenHeight(context) * 0.4,
+        height: height ?? TDeviceUtils.screenHeight(context) * 0.4,
         fit: BoxFit.cover,
       ),
     );

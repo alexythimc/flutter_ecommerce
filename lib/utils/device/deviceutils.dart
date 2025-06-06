@@ -130,4 +130,8 @@ class TDeviceUtils {
   static Size getAppBarSize() {
     return const Size.fromHeight(kToolbarHeight);
   }
+
+  static Size getTabBarSize() {
+    return const Size.fromHeight(kToolbarHeight + (kTextTabBarHeight - 30));
+  }
 }
